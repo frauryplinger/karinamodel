@@ -1,0 +1,8 @@
+# Quellen und Übergabe – NICHT veröffentlichen
+HANDOFF_*.md
+*.pdf
+karinamodel_mobile.html
+_quelle/
+# Rohdaten / Zwischenstände
+_raw/
+.DS_Store
