@@ -23,6 +23,7 @@ kk/index.html         Dieselbe Seite auf Kasachisch
 css/style.css         Aussehen: Farben, Schriften, Abstände
 js/viewer.js          Foto-Ansicht (Foto antippen → groß, Vor/Zurück, Wischen)
 js/lang.js            Sprachauswahl oben rechts (schließt bei Tippen daneben)
+js/strips.js          Pfeil-Knöpfe für die Fotostreifen am Computer
 fonts/                Schriften Golos Text und Unbounded im WOFF2-Format (+ Lizenz OFL.txt)
 img/photo/            Fotos, jeweils zwei Größen:
                         name.webp      groß (lange Kante max. 1600 px)

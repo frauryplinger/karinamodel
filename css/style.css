@@ -116,12 +116,23 @@ body.viewer-open{overflow:hidden}
 .viewer-top p{font-size:14px}
 .measurements dd{font-size:25px}}
 @media(min-width:1000px){.strip.snaps .card{flex-basis:22%}
-.hero-content{text-align:right}
-.hero .eyebrow{margin-left:auto}
-.hero-actions{justify-content:flex-end}
-.hero h1{margin-left:auto}
-.hero-content .hero-location{margin-left:auto}
-.hero-image{object-position:center 30%}}
+/* Desktop-Start: Foto links, Text rechts */
+.hero{min-height:clamp(620px,calc(100vh - 58px),900px);align-items:center;background:var(--bg)}
+.hero-image{width:50%;object-position:center 30%}
+.hero:after{background:linear-gradient(90deg,#11101100 0,#11101100 40%,#111011 50%)}
+.hero-content{width:auto;margin:0 0 0 50%;padding:80px max(32px,calc((100vw - 1120px)/2)) 80px clamp(48px,5vw,88px)}
+.hero h1{font-size:clamp(50px,5.2vw,84px)}
+.hero .eyebrow{font-size:13px}}
+@media(min-width:1200px){.photo-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
+/* Pfeil-Knöpfe für Fotostreifen (nur mit Maus/Trackpad) */
+.strip-wrap{position:relative}
+.strip-btn{display:none}
+@media(hover:hover) and (pointer:fine){
+.strip-btn{display:flex;align-items:center;justify-content:center;position:absolute;top:calc(50% - 7px);transform:translateY(-50%);z-index:2;width:48px;height:48px;border-radius:50%;border:1px solid #ffffff38;background:#111011d9;color:var(--text);font-size:18px;box-shadow:0 6px 20px #0008;transition:opacity .2s,background .2s}
+.strip-btn:hover{background:#2a2228}
+.strip-btn.prev{left:-12px}.strip-btn.next{right:-12px}
+.strip-btn[disabled]{opacity:0;pointer-events:none}
+.swipe-hint{display:none}}
 @media(max-width:340px){.wrap,.hero-content{width:calc(100% - 28px)}
 .header nav a{padding-inline:3px;font-size:11.5px}
 .hero-actions{display:grid;grid-template-columns:1fr;max-width:240px}
