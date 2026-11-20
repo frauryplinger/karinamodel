@@ -29,6 +29,7 @@ img/photo/            Fotos, jeweils zwei Größen:
                         name.webp      groß (lange Kante max. 1600 px)
                         name-800.webp  klein (lange Kante max. 800 px, fürs Handy)
 img/video/            Titelbilder der Videos
+video/                Videos, die direkt auf der Seite abspielen (MP4, fürs Web verkleinert)
 img/flags/            Flaggen für die Sprachauswahl
 img/og-image.jpg      Vorschaubild, wenn der Link in WhatsApp/Telegram geteilt wird
 favicon.svg, favicon-32.png, apple-touch-icon.png   Symbol im Browser-Tab
@@ -66,6 +67,15 @@ Am einfachsten ersetzt du ein Foto durch eine neue Datei **mit genau demselben N
 5. Hat das neue Foto ein anderes Seitenverhältnis (z. B. quer statt hoch), bitte in allen drei `index.html`-Dateien bei diesem Foto die Zahlen `width="…"` und `height="…"` anpassen. Das sind die Pixelmaße der kleinen Datei.
 
 Die Bildbeschreibung (`alt="…"`) gleich hinter dem Foto bitte passend zum neuen Motiv ändern, in jeder Sprache. Sie ist für Suchmaschinen und blinde Nutzer wichtig.
+
+## Videos
+
+Die meisten Video-Kacheln führen noch zum Instagram-Profil. Sobald es das Video als Datei gibt, kann die Kachel es direkt abspielen.
+Bisher ist das beim ersten Video unter „Работы в видео“ der Fall (`video/portfolio-video-01.mp4`).
+Das Video wird erst geladen, wenn jemand auf Play tippt. Die Seite bleibt also schnell.
+
+Neue Videos bitte nicht in Originalgröße hochladen. Handy-Videos sind oft 30 MB und mehr. Am einfachsten gibst du die Datei Claude:
+Claude verkleinert sie (meist auf unter 5 MB), ordnet sie dem passenden Titelbild zu und baut sie in alle drei Sprachversionen ein.
 
 ## Veröffentlichen mit GitHub Pages
 

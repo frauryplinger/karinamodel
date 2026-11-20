@@ -104,3 +104,5 @@ document.body.classList.remove('viewer-open');
 }
 )();
 
+/* Nur ein Video gleichzeitig abspielen */
+document.addEventListener('play',e=>{document.querySelectorAll('video').forEach(v=>{if(v!==e.target)v.pause();});},true);

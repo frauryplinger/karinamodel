@@ -155,3 +155,5 @@ body.viewer-open{overflow:hidden}
 .lang li a[aria-current]{background:#ffffff12;color:var(--accent)}
 @media(max-width:419px){.lang-code{display:none}.lang summary{padding-inline:7px;gap:5px}}
 @media(prefers-reduced-motion:reduce){.lang summary:after{transition:none}}
+/* Direkt abspielbare Videos (statt Link zu Instagram) */
+.video-card video{display:block;width:100%;height:auto;aspect-ratio:9/16;object-fit:cover;background:#000}
