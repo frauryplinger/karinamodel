@@ -53,7 +53,7 @@ items.forEach((card,i)=>{
 card.tabIndex=0;
 card.setAttribute('role','button');
 card.setAttribute('aria-haspopup','dialog');
-card.setAttribute('aria-label','Увеличить: '+card.querySelector('img').alt);
+card.setAttribute('aria-label',(dialog.dataset.zoom||'Увеличить: ')+card.querySelector('img').alt);
 card.addEventListener('click',()=>open(i,card));
 card.addEventListener('keydown',e=>{
 if(e.key==='Enter'||e.key===' '){
@@ -90,6 +90,9 @@ move(-1);
 }
 }
 );
+let touchX=null,touchY=null;
+dialog.addEventListener('touchstart',e=>{if(e.touches.length===1){touchX=e.touches[0].clientX;touchY=e.touches[0].clientY;}else touchX=null;},{passive:true});
+dialog.addEventListener('touchend',e=>{if(touchX===null)return;const dx=e.changedTouches[0].clientX-touchX,dy=e.changedTouches[0].clientY-touchY;touchX=null;if(Math.abs(dx)>50&&Math.abs(dx)>Math.abs(dy)*1.5)move(dx<0?1:-1);},{passive:true});
 window.addEventListener('popstate',()=>{
 if(dialog.open)finish();
 }

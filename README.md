@@ -4,19 +4,31 @@ Die Portfolio-Website des Models **Karina Ryplinger** (Карина Рыплин
 Es ist eine einfache, statische Website: reines HTML, CSS und ein kleines JavaScript.
 Sie braucht keine Datenbank, keinen Server und keine Programme. Veröffentlicht wird sie kostenlos über **GitHub Pages**.
 
-Die Website ist auf Russisch und zuerst für das Handy gebaut. Auf größeren Bildschirmen passt sie sich automatisch an.
+Die Website gibt es in drei Sprachen. Russisch ist die Standardsprache. Oben rechts kann man über die kleine Flagge die Sprache wechseln:
+
+| Sprache | Adresse | Datei |
+|---|---|---|
+| Russisch (Standard) | karinamodel.com/ | `index.html` |
+| Englisch | karinamodel.com/en/ | `en/index.html` |
+| Kasachisch | karinamodel.com/kk/ | `kk/index.html` |
+
+Sie ist zuerst für das Handy gebaut und passt sich auf größeren Bildschirmen automatisch an.
 
 ## Ordnerstruktur
 
 ```
-index.html            Die Website selbst: alle Texte, Links und Bilder-Verweise
+index.html            Die Website auf Russisch: alle Texte, Links und Bilder-Verweise
+en/index.html         Dieselbe Seite auf Englisch
+kk/index.html         Dieselbe Seite auf Kasachisch
 css/style.css         Aussehen: Farben, Schriften, Abstände
-js/viewer.js          Foto-Ansicht (Foto antippen → groß, Vor/Zurück)
-fonts/                Schriften Golos Text und Unbounded (+ Lizenz OFL.txt)
+js/viewer.js          Foto-Ansicht (Foto antippen → groß, Vor/Zurück, Wischen)
+js/lang.js            Sprachauswahl oben rechts (schließt bei Tippen daneben)
+fonts/                Schriften Golos Text und Unbounded im WOFF2-Format (+ Lizenz OFL.txt)
 img/photo/            Fotos, jeweils zwei Größen:
                         name.webp      groß (lange Kante max. 1600 px)
                         name-800.webp  klein (lange Kante max. 800 px, fürs Handy)
 img/video/            Titelbilder der Videos
+img/flags/            Flaggen für die Sprachauswahl
 img/og-image.jpg      Vorschaubild, wenn der Link in WhatsApp/Telegram geteilt wird
 favicon.svg, favicon-32.png, apple-touch-icon.png   Symbol im Browser-Tab
 .nojekyll             Leere Datei – sagt GitHub, die Seite unverändert auszuliefern
@@ -26,7 +38,9 @@ Die Fotos heißen nach ihrer Herkunft im Portfolio-PDF: `pdf-07-01` = PDF-Seite 
 
 ## Texte ändern (Schritt für Schritt)
 
-1. Auf GitHub im Repository die Datei **`index.html`** anklicken.
+**Wichtig:** Jeder Text steht dreimal, in jeder Sprache einmal. Änderst du z. B. die Telefonnummer, dann bitte in allen drei Dateien: `index.html`, `en/index.html` und `kk/index.html`.
+
+1. Auf GitHub im Repository die Datei **`index.html`** anklicken (bzw. erst den Ordner `en` oder `kk` und darin `index.html`).
 2. Oben rechts auf das **Stift-Symbol** („Edit this file“) klicken.
 3. Mit **Strg + F** (Mac: **Cmd + F**) den Text suchen, den du ändern willst, zum Beispiel `175`.
 4. Nur den sichtbaren Text ändern. Zeichen wie `<p>` oder `</dd>` bitte nicht anrühren.
@@ -34,7 +48,7 @@ Die Fotos heißen nach ihrer Herkunft im Portfolio-PDF: `pdf-07-01` = PDF-Seite 
 6. Nach 1–2 Minuten ist die Änderung online. Falls nicht, im Browser neu laden.
 
 Wo was steht:
-- Maße: nach `Рост` suchen.
+- Maße: nach `175` suchen.
 - Telefonnummer: nach `+7 708` suchen. Achtung, sie steht **zweimal** drin: einmal als Text, einmal im Link `tel:+77089433714`.
 - WhatsApp-Links: nach `wa.me` suchen (mehrere Stellen).
 
@@ -48,9 +62,9 @@ Am einfachsten ersetzt du ein Foto durch eine neue Datei **mit genau demselben N
 2. Auf GitHub in den Ordner **`img/photo`** gehen.
 3. Oben rechts **„Add file“ → „Upload files“** wählen und beide Dateien hineinziehen. Gleichnamige Dateien werden ersetzt.
 4. Unten auf **„Commit changes“** klicken.
-5. Hat das neue Foto ein anderes Seitenverhältnis (z. B. quer statt hoch), bitte in `index.html` bei diesem Foto die Zahlen `width="…"` und `height="…"` anpassen. Das sind die Pixelmaße der kleinen Datei.
+5. Hat das neue Foto ein anderes Seitenverhältnis (z. B. quer statt hoch), bitte in allen drei `index.html`-Dateien bei diesem Foto die Zahlen `width="…"` und `height="…"` anpassen. Das sind die Pixelmaße der kleinen Datei.
 
-Die Bildbeschreibung (`alt="…"`) gleich hinter dem Foto bitte passend zum neuen Motiv ändern. Sie ist für Suchmaschinen und blinde Nutzer wichtig.
+Die Bildbeschreibung (`alt="…"`) gleich hinter dem Foto bitte passend zum neuen Motiv ändern, in jeder Sprache. Sie ist für Suchmaschinen und blinde Nutzer wichtig.
 
 ## Veröffentlichen mit GitHub Pages
 
@@ -66,6 +80,13 @@ Die Bildbeschreibung (`alt="…"`) gleich hinter dem Foto bitte passend zum neue
    - 4 × A-Eintrag für `@`: `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
    - CNAME-Eintrag `www` → `<kontoname>.github.io`
 3. Bis zu 24 Stunden warten. Danach in GitHub unter Pages **„Enforce HTTPS“** einschalten.
+
+## Hinweis zur Schrift auf Kasachisch
+
+Die Überschriften-Schrift **Unbounded** enthält keine kasachischen Sonderbuchstaben (Ә, Ғ, Қ, Ң, Ө, Ұ, Ү, Һ).
+Deshalb wurden die kasachischen Überschriften so formuliert, dass sie ohne diese Buchstaben auskommen.
+Wer eine Überschrift auf Kasachisch ändert, sollte das beachten. Sonst erscheint der Buchstabe in einer anderen Schrift.
+Fließtext und Buttons sind nicht betroffen.
 
 ## Lizenzen
 
