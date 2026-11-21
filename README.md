@@ -71,7 +71,7 @@ Die Bildbeschreibung (`alt="…"`) gleich hinter dem Foto bitte passend zum neue
 ## Videos
 
 Alle Video-Kacheln spielen das Video direkt auf der Seite ab (Ordner `video/`, Titelbilder in `img/video/`):
-1 Snaps-Video, 19 Videos unter „Работы в видео“ und 14 UGC-Videos.
+1 Snaps-Video, 19 Videos unter „Работы в видео“ und 15 UGC-Videos.
 Ein Video wird erst geladen, wenn jemand auf Play tippt – die Seite bleibt also schnell.
 
 Neue Videos bitte nicht in Originalgröße hochladen (Handy-Videos sind oft 30 MB und mehr).
