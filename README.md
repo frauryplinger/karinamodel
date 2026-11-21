@@ -70,12 +70,13 @@ Die Bildbeschreibung (`alt="…"`) gleich hinter dem Foto bitte passend zum neue
 
 ## Videos
 
-Die meisten Video-Kacheln führen noch zum Instagram-Profil. Sobald es das Video als Datei gibt, kann die Kachel es direkt abspielen.
-Bisher ist das bei 17 Videos unter „Работы в видео“ (Nr. 1, 2, 4, 5, 6, 8, 9, 10, 11, 13, 15, 16, 17, 18, 19, 21, 22) bei 10 UGC-Videos (Nr. 1–5, 8–12) sowie beim Snaps-Video der Fall (Ordner `video/`, z. B. `video/portfolio-video-01.mp4`).
-Das Video wird erst geladen, wenn jemand auf Play tippt. Die Seite bleibt also schnell.
+Alle Video-Kacheln spielen das Video direkt auf der Seite ab (Ordner `video/`, Titelbilder in `img/video/`):
+1 Snaps-Video, 19 Videos unter „Работы в видео“ und 14 UGC-Videos.
+Ein Video wird erst geladen, wenn jemand auf Play tippt – die Seite bleibt also schnell.
 
-Neue Videos bitte nicht in Originalgröße hochladen. Handy-Videos sind oft 30 MB und mehr. Am einfachsten gibst du die Datei Claude:
-Claude verkleinert sie (meist auf unter 5 MB), ordnet sie dem passenden Titelbild zu und baut sie in alle drei Sprachversionen ein.
+Neue Videos bitte nicht in Originalgröße hochladen (Handy-Videos sind oft 30 MB und mehr).
+Am einfachsten gibst du die Datei Claude: Claude verkleinert sie (meist auf unter 5–10 MB),
+erstellt ein Titelbild und baut sie in alle drei Sprachversionen ein.
 
 ## Veröffentlichen mit GitHub Pages
 
