@@ -100,6 +100,20 @@ Deshalb wurden die kasachischen Überschriften so formuliert, dass sie ohne dies
 Wer eine Überschrift auf Kasachisch ändert, sollte das beachten. Sonst erscheint der Buchstabe in einer anderen Schrift.
 Fließtext und Buttons sind nicht betroffen.
 
+## Auffindbarkeit (Google, Apple, ChatGPT & Co.)
+
+Die Seite enthält unsichtbare Zusatzinformationen für Suchmaschinen – am sichtbaren Text ändert das nichts:
+- **Titel und Beschreibung** je Sprache (im `<head>` jeder `index.html`): erscheinen in den Suchergebnissen.
+- **Strukturierte Daten** (schema.org, `application/ld+json`): maschinenlesbarer Steckbrief – Person, Beruf, Städte, Links.
+- `robots.txt`: erlaubt allen Suchmaschinen und KI-Suchdiensten das Lesen der Seite.
+- `sitemap.xml`: Verzeichnis der drei Sprachseiten (bei größeren Änderungen das Datum `lastmod` anpassen).
+- `llms.txt`: kurze Textzusammenfassung für KI-Dienste (junger, inoffizieller Standard).
+
+Nach dem Verbinden der Domain einmalig anmelden (kostenlos), jeweils mit `https://karinamodel.com/sitemap.xml`:
+1. **Google Search Console** – search.google.com/search-console
+2. **Bing Webmaster Tools** – bing.com/webmasters (wird u. a. von ChatGPT-Suche und anderen KI-Suchen genutzt)
+3. **Yandex Webmaster** – webmaster.yandex.com (in Kasachstan viel genutzt)
+
 ## Lizenzen
 
 Die Schriften **Golos Text** und **Unbounded** stehen unter der SIL Open Font License 1.1 (siehe `fonts/OFL.txt`).

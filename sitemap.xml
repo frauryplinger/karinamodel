@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://karinamodel.com/</loc>
+    <lastmod>2026-11-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://karinamodel.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://karinamodel.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="kk" href="https://karinamodel.com/kk/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://karinamodel.com/"/>
+  </url>
+  <url>
+    <loc>https://karinamodel.com/en/</loc>
+    <lastmod>2026-11-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://karinamodel.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://karinamodel.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="kk" href="https://karinamodel.com/kk/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://karinamodel.com/"/>
+  </url>
+  <url>
+    <loc>https://karinamodel.com/kk/</loc>
+    <lastmod>2026-11-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://karinamodel.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://karinamodel.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="kk" href="https://karinamodel.com/kk/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://karinamodel.com/"/>
+  </url>
+</urlset>
