@@ -71,7 +71,7 @@ Die Bildbeschreibung (`alt="…"`) gleich hinter dem Foto bitte passend zum neue
 ## Videos
 
 Die meisten Video-Kacheln führen noch zum Instagram-Profil. Sobald es das Video als Datei gibt, kann die Kachel es direkt abspielen.
-Bisher ist das bei drei Videos unter „Работы в видео“ der Fall: Nr. 1, 2 und 15 (`video/portfolio-video-01.mp4`, `-02.mp4`, `-15.mp4`).
+Bisher ist das bei fünf Videos unter „Работы в видео“ der Fall: Nr. 1, 2, 4, 6 und 15 (Ordner `video/`, z. B. `video/portfolio-video-01.mp4`).
 Das Video wird erst geladen, wenn jemand auf Play tippt. Die Seite bleibt also schnell.
 
 Neue Videos bitte nicht in Originalgröße hochladen. Handy-Videos sind oft 30 MB und mehr. Am einfachsten gibst du die Datei Claude:
